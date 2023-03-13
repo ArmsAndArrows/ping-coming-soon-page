@@ -160,7 +160,7 @@ body {
   transition: all 0.2s;
 }
 .notify__button:hover {
-  cursor: url(/images/icons8-hand-cursor.svg) 20 10, auto;
+  cursor: url(../images/icons8-hand-cursor.svg) 20 10, auto;
   box-shadow: 0 0.5rem 1rem rgba(79, 125, 243, 0.8);
   transform: translateY(-2px);
   background-color: rgba(79, 125, 243, 0.8);
@@ -213,7 +213,7 @@ body {
   transition: all 0.2s;
 }
 .social__link:hover {
-  cursor: url(/images/icons8-hand-cursor.svg) 20 10, auto;
+  cursor: url(../images/icons8-hand-cursor.svg) 20 10, auto;
   background-color: rgb(79, 125, 243);
   color: rgb(255, 255, 255);
 }
