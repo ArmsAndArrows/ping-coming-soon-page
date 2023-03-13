@@ -1,0 +1,27 @@
+{
+  "name": "ping-coming-soon-page",
+  "version": "1.0.0",
+  "description": "visit the best places in the world!",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass sass/main.scss css/style.css -w",
+    "devserver": "live-server --browser=firefox",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "sass css/style.prefix.css css/style.css --style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.58.3"
+  },
+  "dependencies": {
+   
+  }
+}
